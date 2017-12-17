@@ -1,0 +1,99 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.border.*;
+
+public class NumericKeypadPanel extends JPanel{
+
+	private JButton source,clear,button0,button1, button2, button3, button4, button5,button6,button7,button8,button9,buttonStar,buttonPound;
+	private JPanel keyPanel;
+	private JLabel label = new JLabel("");
+	
+	
+	public NumericKeypadPanel(){
+		
+		setLayout(new BorderLayout());
+		setPreferredSize(new Dimension(250,250));
+		
+		label.setBackground(Color.white);
+		label.setBorder(new BevelBorder(BevelBorder.LOWERED));
+		add(label, BorderLayout.NORTH);
+		
+		keyPanel.setLayout(new GridLayout(4,3));
+		keyPanel.setBorder(new LineBorder(Color.black,4));
+		
+		KeyListener key = new KeyListener();
+		
+		button1 = new JButton("1");
+		button1.addActionListener(key);
+		keyPanel.add(button1);
+		
+		button2 = new JButton("2");
+		button2.addActionListener(key);
+		keyPanel.add(button2);
+		
+		button3 = new JButton("3");
+		button3.addActionListener(key);
+		keyPanel.add(button3);
+		
+		button4 = new JButton("4");
+		button4.addActionListener(key);
+		keyPanel.add(button4);
+		
+		button5 = new JButton("5");
+		button5.addActionListener(key);
+		keyPanel.add(button5);
+		
+		button6 = new JButton("6");
+		button6.addActionListener(key);
+		keyPanel.add(button6);
+		
+		button7 = new JButton("7");
+		button7.addActionListener(key);
+		keyPanel.add(button7);
+		
+		button8 = new JButton("8");
+		button8.addActionListener(key);
+		keyPanel.add(button8);
+		
+		button9 = new JButton("9");
+		button9.addActionListener(key);
+		keyPanel.add(button9);
+		
+		buttonStar = new JButton("*");
+		buttonStar.addActionListener(key);
+		keyPanel.add(buttonStar);
+		
+		button0 = new JButton("0");
+		button0.addActionListener(key);
+		keyPanel.add(button0);
+		
+		buttonPound = new JButton("#");
+		buttonPound.addActionListener(key);
+		keyPanel.add(buttonPound);
+		
+		add(keyPanel,BorderLayout.CENTER);
+		
+		clear = new JButton();
+		clear.setText("Clear");
+		clear.setToolTipText("Clear the display");
+		clear.addActionListener(new ClearListener());
+		add(clear, BorderLayout.SOUTH);
+		
+	}
+		private class KeyListener implements ActionListener{
+			public void actionPerformed(ActionEvent event){
+				source = (JButton)event.getSource();
+				label.setText(label.getText() + source.getText());
+			}
+		}
+		
+		private class ClearListener implements ActionListener{
+			public void actionPerformed(ActionEvent event){
+				label.setText(" ");
+			}
+		}
+		
+		
+	
+}

@@ -1,0 +1,14 @@
+package Basics;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Browserinvocation {
+
+	public static void main(String[] args) {
+		
+		Webdriver firefox = new FirefoxDriver();
+		WebDriver chrome = new ChromeDriver();
+		
+	}
+
+}

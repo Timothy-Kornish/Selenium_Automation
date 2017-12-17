@@ -11,7 +11,7 @@ public class xpathValidation {
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get("https://login.salesforce.com/");
-		//driver.findElement(By.xpath("//*[@id=\"forgot_password_link\"]")).click();
+		driver.findElement(By.xpath("//*[@id=\"forgot_password_link\"]")).click();
 		
 		//------------------------------------------------------------------------------
 		// validating xpath and css elements

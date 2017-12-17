@@ -1,0 +1,10 @@
+package locatorIdentifiers;
+
+public class absolute_relative_xpaths {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

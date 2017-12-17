@@ -1,0 +1,14 @@
+package locatorIdentifiers;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class xpath {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "/Users/Timmehk/Automation/chromedriver");
+		WebDriver driver = new ChromeDriver();
+		// Chrome and Firefox will give the Xpath
+	}
+
+}

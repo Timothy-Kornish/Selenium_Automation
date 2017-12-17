@@ -1,0 +1,17 @@
+package Basics;
+
+import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.safari.SafariOptions;
+import org.openqa.selenium.WebDriver;
+
+
+public class safari {
+
+	public static void main(String[] args) {
+		
+		WebDriver safariDriver = new SafariDriver();
+		safariDriver.get("http://www.google.com");
+		
+	}
+
+}

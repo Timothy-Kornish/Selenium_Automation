@@ -28,11 +28,16 @@ public class customCSS_from_html_attributes {
 		//------------------------------------------------------------------------------------------------------
 
 		// css selector: tagname[attibute="value"]
+		// other ways: #id   
+		//             tagname#id
 		// for all tags: [attribute="value"]
 		
 		driver.get("https://www.facebook.com/");
 		driver.findElement(By.cssSelector("input[name=\"email\"]")).sendKeys("My own css path");
-		driver.findElement(By.cssSelector("[value=\"Log In\"]")).click();
+		//driver.findElement(By.cssSelector("#pass")).sendKeys("password");
+		driver.findElement(By.cssSelector("input#pass")).sendKeys("password");
+		
+		//driver.findElement(By.cssSelector("[value=\"Log In\"]")).click();
 		
 	}
 
