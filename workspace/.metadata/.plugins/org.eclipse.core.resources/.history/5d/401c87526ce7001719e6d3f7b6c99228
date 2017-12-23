@@ -1,0 +1,21 @@
+package ajax;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class mouse_over_and_clicking {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "/Users/Timmehk/Automation/chromedriver");
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("https://www.amazon.com");
+		
+		Actions act = new Actions(driver);
+		act.moveToElement(driver.findElement(By.xpath("//*[@id=\"nav-link-accountList\"]"))).build().perform();
+		
+	}
+
+}

@@ -1,0 +1,34 @@
+package test_case_exercises;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class calender_UI {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		System.setProperty("webdriver.chrome.driver", "/Users/Timmehk/Automation/chromedriver");
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("https://www.path2usa.com/travel-companions");
+
+		//-------------------------------------------------------------------------------------
+		// Picking out a date
+		//-------------------------------------------------------------------------------------
+		
+		driver.findElement(By.id("travel_date")).click();
+		List<WebElement> days = driver.findElements(By.className("day"));
+		
+		for (int i = 0; i < days.size(); i++) {
+			driver.findElements(By.className("day")).get(i).click();
+		}
+		
+		Thread.sleep(5000);
+		driver.quit();
+	}
+
+}

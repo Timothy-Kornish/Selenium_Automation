@@ -1,0 +1,17 @@
+package mouse_actions_multiple_windows;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class hadnling_frames {
+
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.chrome.driver", "/Users/Timmehk/Automation/chromedriver");
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("https://accounts.google.com/signup");
+
+	}
+
+}
