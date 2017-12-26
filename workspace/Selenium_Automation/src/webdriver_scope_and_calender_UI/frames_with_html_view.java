@@ -20,10 +20,8 @@ public class frames_with_html_view {
 	}
 	
 	public static void switchToFrame(WebDriver driver){ 
-		System.out.println("Size: " + driver.findElements(By.tagName("iframe")).size());
 		
 		for (int i = 0; i < driver.findElements(By.tagName("iframe")).size(); i++) {
-			System.out.println(i);
 			driver.switchTo().frame(i);
 			if (driver.findElements(By.xpath("//*[@id='recaptcha-anchor']/div[5]")).size() > 0) {
 				System.out.println("Found link");

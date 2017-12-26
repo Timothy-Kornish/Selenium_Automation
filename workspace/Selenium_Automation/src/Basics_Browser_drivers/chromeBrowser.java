@@ -1,4 +1,4 @@
-package Basics;
+package Basics_Browser_drivers;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.WebDriver;
 
