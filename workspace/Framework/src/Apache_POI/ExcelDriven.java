@@ -20,7 +20,7 @@ public class ExcelDriven {
 
 	public static void main(String[] args) throws IOException{
 		
-		file = new FileInputStream(new File("/Users/TimmehK/Documents/data.xlsx"));
+		file = new FileInputStream(new File("/Users/TimmehK/Selenium_Automation/workspace/Framework/src/Apache_POI/data.xlsx"));
 		wb = new XSSFWorkbook(file);
 		
 		String value = getCellData(2, 2);
