@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" name="Failed suite [Automation Test]">
+  <test name="Smoke TestCases(failed)">
+    <classes>
+      <class name="dataDriven.parameterizing_data">
+        <methods>
+          <include name="FlightBooking"/>
+        </methods>
+      </class> <!-- dataDriven.parameterizing_data -->
+    </classes>
+  </test> <!-- Smoke TestCases(failed) -->
+</suite> <!-- Failed suite [Automation Test] -->

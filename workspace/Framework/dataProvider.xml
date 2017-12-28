@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name = "Automation Test">
+	<test name = "Smoke TestCases">
+		
+		<parameter name = "adminUserID" value = "userID:adminYo"/>
+		<classes>
+			<class name = "dataDriven.parameterizing_data"/>
+		</classes>
+		
+	</test>
+</suite>

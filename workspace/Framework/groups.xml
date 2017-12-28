@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name = "Automation Test">
+	<test name = "Smoke TestCases">
+		<groups>
+			<run>
+				<include name = "Priority1"/>
+				<include name = "Priority2"/>
+				
+			</run>
+		</groups>
+		
+		<classes>
+			<class name = "Framework.testNG.group_priority_tests"/>
+		</classes>
+	</test>
+</suite>
