@@ -1,5 +1,0 @@
-Jenkins:
-
-to initialize: java -jar jenkins.war --httpPort=8888
-Username: timmmmothy
-Password: Tk102938
