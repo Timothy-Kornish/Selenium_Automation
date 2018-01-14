@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name = "Automation Test" parallel = "test" thread-count="2">
+
+	<listeners>
+		<listener class-name = "Framework.testNG.Listeners" />
+	</listeners>
+
+	<test name = "Smoke TestCases">
+		<classes>
+			<class name = "Framework.testNG.annotations_testNG"/>
+			<!--  splitting up two classes from one test to two to try parallel testing
+			<class name = "Framework.testNG.prioritizing_test" />
+			 -->
+		</classes>
+	</test>
+	
+	<test name = "Smoke TestCases">
+		<classes>
+			<class name = "Framework.testNG.prioritizing_test" />
+		</classes>
+	</test>
+	
+</suite>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;jenkins/src/jenkins/jenkins login&apos; to &apos;jenkins_login&apos;" description="Rename resource &apos;jenkins login&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/jenkins/jenkins login" name="jenkins_login" stamp="1514519668586" updateReferences="true"/>
+</session>
