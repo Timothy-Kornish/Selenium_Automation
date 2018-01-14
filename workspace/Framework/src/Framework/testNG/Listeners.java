@@ -1,0 +1,55 @@
+package Framework.testNG;
+
+import org.testng.ITestContext;
+import org.testng.ITestListener;
+import org.testng.ITestResult;
+
+// Interface ITestListener which implements TestNG listeners
+public class Listeners implements ITestListener{
+
+	@Override
+	public void onTestStart(ITestResult result) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onTestSuccess(ITestResult result) {
+		// TODO Auto-generated method stub
+		System.out.println("Successful test executed");
+	}
+
+	@Override
+	public void onTestFailure(ITestResult result) {
+		// TODO Auto-generated method stub
+		// screenshot code
+		//response if API is failed
+		System.out.println("unsuccessful test executed, test name: " + result.getName());
+	}
+
+	@Override
+	public void onTestSkipped(ITestResult result) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onStart(ITestContext context) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onFinish(ITestContext context) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+}

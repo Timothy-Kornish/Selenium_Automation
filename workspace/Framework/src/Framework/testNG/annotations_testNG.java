@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.junit.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -26,7 +27,8 @@ public class annotations_testNG {
 	
 	@Test
 	public void assignedSeat() {
-		System.out.println("Assigning Seat");
+		System.out.println("Assigning Seat (this test will fail!)");
+		Assert.assertTrue(false);
 	}
 	
 	@Test
