@@ -1,0 +1,6 @@
+23:53:22.518 [main] ERROR alpha.Demo - object is present
+23:53:22.520 [main] FATAL alpha.Demo - This is fatal
+23:54:27.077 [main] ERROR alpha.Demo - object is present
+23:54:27.079 [main] FATAL alpha.Demo - This is fatal
+23:54:31.809 [main] ERROR alpha.Demo - object is present
+23:54:31.812 [main] FATAL alpha.Demo - This is fatal
